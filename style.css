@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 7%;
+  /* background-color: black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.container {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: white;
+}
+.container span {
+  color: red;
+}
+
+.row a {
+  color: white;
+  margin: 0 1.5rem;
+}
+
+.row a:hover {
+  color: red;
+}
+
+/* hero section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1.3rem 7%;
+}
+
+.home .heading h3 {
+  font-size: 1rem;
+}
+.home .heading h1 {
+  font-size: 3.5rem;
+}
+.home .heading h2 {
+  font-size: 2rem;
+}
+
+.home .heading h1 span {
+  color: red;
+}
+
+.home .img img {
+  margin-top: 7rem;
+  width: 50rem;
+}
+
+/* about section */
+.about {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  padding: 1.3rem 7%;
+}
+
+.about img {
+  height: auto;
+  width: 430px;
+  margin-right: 5rem;
+}
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text span {
+  color: red;
+}
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.galeri {
+  padding: 5rem 7% 1.4rem;
+}
+
+.galeri h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.galeri .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.galeri .container .gambar img {
+  width: 100%;
+}
+
+.galeri .container .gambar h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  height: 100vh;
+  padding: 5rem 7% 1.4rem;
+}
+
+.contact .kontak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #373737;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact .kontak form .input {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: 2px solid #f9004d;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.contact .kontak form .input span {
+  margin-right: 1rem;
+}
+
+.contact .kontak form .input input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: white;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .home {
+    display: block;
+    padding-top: 7rem;
+  }
+
+  .home .img img {
+    margin-top: 7rem;
+    width: 41rem;
+  }
+
+  .about {
+    padding-top: 7rem;
+    display: block;
+    height: 100vh;
+  }
+
+  .about img {
+    height: auto;
+    width: 41rem;
+  }
+
+  .about-text h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
+  .about-text h5 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.5rem;
+  }
+
+  .galeri {
+    margin-top: 30rem;
+  }
+
+  .galeri .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+
+  .contact .kontak {
+    width: 100%;
+  }
+
+  .contact .kontak form .input {
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
